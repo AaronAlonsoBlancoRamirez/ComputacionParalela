@@ -1,0 +1,43 @@
+
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile C++ with g++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "p_c_threads.cpp",
+                "-o",
+                "ejecutable_p_c_threads"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Compile otro_archivo.cpp",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "producer_consumer_omp.cpp",
+                "-o",
+                "ejecutable2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
+
+
+
+
+
+
